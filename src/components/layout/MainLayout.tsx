@@ -1,16 +1,32 @@
-import React from 'react';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+
 import { Layout, Menu, } from 'antd';
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const items = [UserOutlined, VideoCameraOutlined, UploadOutlined, UserOutlined].map(
-  (icon, index) => ({
-    key: String(index + 1),
-    icon: React.createElement(icon),
-    label: `nav ${index + 1}`,
-  }),
-);
+const items = [
+  {
+    key: '1',
+    label: 'Dashboard',
+  },
+  {
+    key: '2',
+    label: 'Dashboard',
+    children: [
+      {
+        key: '21',
+        label: 'Dashboard',
+      },
+      {
+        key: '22',
+        label: 'Dashboard',
+      }
+    ]
+  },
+  {
+    key: '3',
+    label: 'Dashboard',
+  },
+]
 
 const MainLayout = () => {
 
@@ -27,7 +43,10 @@ const MainLayout = () => {
           console.log(collapsed, type);
         }}
       >
-        <div className="demo-logo-vertical" />
+        <div style={{color:'white', textAlign:'center',display:'flex',justifyContent:'center',alignItems:'center',height:'64px'}}>
+           <h1>University</h1> 
+           
+        </div>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']} items={items} />
       </Sider>
       <Layout>
