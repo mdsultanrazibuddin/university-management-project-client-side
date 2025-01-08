@@ -1,5 +1,6 @@
 
 import { Layout, Menu, } from 'antd';
+import { Outlet } from 'react-router-dom';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -59,7 +60,7 @@ const MainLayout = () => {
               
             }}
           >
-            <h1>University Management App</h1>
+            <Outlet/>
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
