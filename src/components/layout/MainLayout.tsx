@@ -5,34 +5,7 @@ import { adminSidebarItems } from '../../routes/admin.route';
 
 const { Header, Content, Footer, Sider } = Layout;
 
-// const items = [
-//   {
-//     key: 'Dashboard',
-//     label: <NavLink to= "/admin/dashboard"> Dashboard </NavLink>,
-//   },
-//   {
-//     key: 'User Management',
-//     label:  'User Management',
-//     children: [
-//       {
-//         key: 'Create Admin',
-//         label: <NavLink to= "/admin/create-admin"> Create Admin </NavLink>,
-//       },
-//       {
-//         key: 'Create Faculty',
-//         label: <NavLink to= "/admin/create-faculty"> Create Faculty </NavLink>,
-//       },
-//       {
-//         key: 'Create Student',
-//         label:<NavLink to= "/admin/create-student"> Create Student </NavLink> ,
-//       },
-//     ]
-//   },
-  
-// ]
-
 const MainLayout = () => {
-
 
   return (
     <Layout style={{height:"100vh"}}>
